@@ -7,6 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-login succefull
+	<form method = "post" action = "VillageServlet">
+  	<div class="form-group">
+   		 <label for="">Village</label>
+    	 <input type="text" class="form-control" name="nomVillage" >
+  	</div>
+  		<button type="submit" class="btn btn-primary">Enregistrer</button>
+	</form>
 </body>
 </html>
