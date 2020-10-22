@@ -1,5 +1,7 @@
 package dao;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -34,5 +36,11 @@ public class VillageImpl implements IVillage {
 			
 		
 	}
+
+		@Override
+		public List<Village> village() {
+			// TODO Auto-generated method stub
+			return null;
+		}
 
 }
