@@ -30,7 +30,7 @@ private IVillage villagedao;
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		request.getRequestDispatcher("afterlogin.jsp").forward(request, response);
+		request.getRequestDispatcher("village.jsp").forward(request, response);
 	}
 
 	

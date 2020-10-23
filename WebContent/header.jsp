@@ -62,7 +62,7 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Gestion villages</h6>
-            <a class="collapse-item" href="afterlogin.jsp">Ajouter un village </a>
+            <a class="collapse-item" href="VillageServlet">Ajouter un village </a>
             <a class="collapse-item" href="cards.html">Lister les village</a>
           </div>
         </div>
@@ -84,7 +84,7 @@
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Gestions Clients</h6>
-            <a class="collapse-item" href="client.jsp">Ajouter Client</a>
+            <a class="collapse-item" href="ClientServlet">Ajouter Client</a>
             <a class="collapse-item" href="register.html">Liste des clients</a>
            
         </div>
