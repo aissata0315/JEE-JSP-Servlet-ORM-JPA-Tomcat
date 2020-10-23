@@ -43,7 +43,7 @@ public class LoginServlet extends HttpServlet {
 		
 		if (userdao.login(email, password)!= null) {
 			
-			req.getRequestDispatcher("afterlogin.jsp").forward(req, resp);;
+			req.getRequestDispatcher("accueil.jsp").forward(req, resp);;
 			
 		}else {
 			System.out.println("login ou mot de passe incorect");

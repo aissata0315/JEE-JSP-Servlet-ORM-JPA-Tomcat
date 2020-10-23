@@ -21,7 +21,7 @@ public class ClientServlet extends HttpServlet {
      
 	private IClient clientdao;
 	private Village villageChoisi;
-	private int villageid;
+	
    
 	
 	@Override
@@ -38,15 +38,14 @@ public class ClientServlet extends HttpServlet {
 
 		
 	}
-
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String nomFamille = request.getParameter("nomFamille").toString();
 		String telephone = request.getParameter("numeroTelephone").toString();
+		int villageid = Integer.parseInt(request.getParameter("villageid"));
 		Client client = new Client();
 		client.setNom(nomFamille);
 		client.setTelephone(telephone);
-		 villageid = Integer.parseInt(request.getParameter("villageid"));
         villageChoisi = clientdao.getVillage(villageid);
 
 		client.setVillage(villageChoisi);
